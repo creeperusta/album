@@ -45,6 +45,7 @@
             this.albumhistory_text = new System.Windows.Forms.TextBox();
             this.Albumname_text = new System.Windows.Forms.TextBox();
             this.albumadd = new System.Windows.Forms.Button();
+            this.clear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.likesong)).BeginInit();
             this.SuspendLayout();
             // 
@@ -200,11 +201,22 @@
             this.albumadd.UseVisualStyleBackColor = false;
             this.albumadd.Click += new System.EventHandler(this.albumadd_Click);
             // 
+            // clear
+            // 
+            this.clear.Location = new System.Drawing.Point(511, 8);
+            this.clear.Name = "clear";
+            this.clear.Size = new System.Drawing.Size(198, 68);
+            this.clear.TabIndex = 24;
+            this.clear.Text = "clear";
+            this.clear.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.clear.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.clear);
             this.Controls.Add(this.albumadd);
             this.Controls.Add(this.Albumname_text);
             this.Controls.Add(this.albumhistory_text);
@@ -249,6 +261,7 @@
         private System.Windows.Forms.TextBox albumhistory_text;
         private System.Windows.Forms.TextBox Albumname_text;
         private System.Windows.Forms.Button albumadd;
+        private System.Windows.Forms.Button clear;
     }
 }
 
