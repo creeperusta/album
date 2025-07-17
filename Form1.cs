@@ -48,5 +48,26 @@ namespace album
             sql.Close();
         }
 
+        private void clear_Click(object sender, EventArgs e)
+        {
+            Albumtime_text.Text = "";
+            Albumname_text.Text = "";
+            albumhistory_text.Text = "";
+            Albumowner_text.Text = "";
+            Albumsong_text.Text = "";
+            likesong_text.Text = "";
+            clear.BackColor = Color.FromArgb(137, 243, 54);
+        }
+
+        private void Albumviem_MouseLeave(object sender, EventArgs e)
+        {
+            Albumviem.BackColor = Color.FromArgb(0, 192, 0);
+
+        }
+        private void clear_MouseLeave(object sender, EventArgs e)
+        {
+            clear.BackColor = Color.FromArgb(0, 192, 0);
+        }
+
     }
 }

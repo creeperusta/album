@@ -60,6 +60,7 @@
             this.Albumviem.Text = "Album viem";
             this.Albumviem.UseVisualStyleBackColor = false;
             this.Albumviem.Click += new System.EventHandler(this.Albumviem_Click);
+            this.Albumviem.MouseLeave += new System.EventHandler(this.Albumviem_MouseLeave);
             // 
             // likesong
             // 
@@ -210,6 +211,8 @@
             this.clear.Text = "clear";
             this.clear.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.clear.UseVisualStyleBackColor = true;
+            this.clear.Click += new System.EventHandler(this.clear_Click);
+            this.clear.MouseLeave += new System.EventHandler(this.clear_MouseLeave);
             // 
             // Form1
             // 
